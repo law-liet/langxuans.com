@@ -1,5 +1,4 @@
-"use strict";
+'use strict';
 
-var Elm = require('./Main.elm');
-
-var app = Elm.Main.embed(document.getElementById('app'))
+var Elm = window.Elm
+var app = Elm.Main.embed(document.getElementById("app"))

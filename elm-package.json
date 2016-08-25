@@ -1,10 +1,10 @@
 {
     "version": "1.0.0",
-    "summary": "My personal website",
-    "repository": "https://github.com/law-liet/langxuans.com.git",
+    "summary": "Examples of The Elm Architecture",
+    "repository": "https://github.com/elm-lang/elm-architecture-tutorial.git",
     "license": "BSD3",
     "source-directories": [
-        "."
+        "nesting"
     ],
     "exposed-modules": [],
     "dependencies": {

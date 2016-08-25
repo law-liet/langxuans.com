@@ -31,15 +31,11 @@ layout t b = docTypeHtml $ do
              meta ! name "description" ! content "Inspire Text"
              meta ! name "viewport" ! content "width=device-width"
              link ! href "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" ! rel  "stylesheet" ! media "screen"
-             script ! src "//npmcdn.com/react@15.3.1/dist/react.js" $ mempty
-             script ! src "//npmcdn.com/react-dom@15.3.1/dist/react-dom.js" $ mempty
-             script ! src "//npmcdn.com/babel-core@5.8.38/browser.min.js" $ mempty
-             script ! src "//npmcdn.com/jquery@3.1.0/dist/jquery.min.js" $ mempty
-             script ! src "//npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js" $ mempty
              style $ preEscapedText $ toStrict layoutCss
            body $ do
              b
-             script ! type_ "text/babel" ! src "/index.js" $ mempty
+             script ! src "/main.js" $ mempty
+             script ! type_ "text/javascript" ! src "/index.js" $ mempty
              script ! src "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" $ mempty
              script ! src "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" $ mempty
 
